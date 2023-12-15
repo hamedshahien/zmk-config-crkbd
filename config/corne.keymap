@@ -46,7 +46,7 @@
 &kp TAB    &kp Q  &kp W         &kp E                &kp R              &kp T              &kp Y             &kp U               &kp I                 &kp O         &kp P     &kp BSPC
 &kp LCTRL  &kp A  &hml LCTRL S  &hml LEFT_COMMAND D  &hml LEFT_SHIFT F  &hml LEFT_ALT G    &hmr RIGHT_ALT H  &hmr RIGHT_SHIFT J  &hmr RIGHT_COMMAND K  &hmr RCTRL L  &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X         &kp C                &kp V              &kp B              &kp N             &kp M               &kp COMMA             &kp DOT       &kp FSLH  &kp ESC
-                                &lt 3 ESCAPE         &lt 1 SPACE        &kp SPACE          &kp RET           &mo 2               &kp RALT
+                                &lt 3 ESCAPE         &lt 1 SPACE        &lt 5 TAB          &lt 6 ENTER       &lt 5 SPACE         &lt 4 BACKSPACE
             >;
         };
 
@@ -93,13 +93,15 @@
             label = "Fun";
         };
 
-        layer_4 {
+        nav_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "Nav";
         };
 
         layer_5 {
