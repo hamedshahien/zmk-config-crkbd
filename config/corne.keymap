@@ -18,7 +18,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <31 6 18 30 41 40 39 19 7 8 20 32 33 34 22 21 9 10>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
         };
 
         hmr: homewrow_mods_right {
@@ -61,10 +61,10 @@
 
             label = "Nums";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp RIGHT_BRACE    &kp N7        &kp N8        &kp N9        &kp TILDE      &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp RIGHT_BRACKET  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp GRAVE      &trans
-&kp LSHFT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR    &bootloader     &kp PLUS           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &trans
-                                        &bt BT_CLR    &trans        &kp SPACE       &kp PIPE           &kp N0        &kp RALT
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp SEMI          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL          &trans
+&kp LSHFT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR    &bootloader     &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &trans
+                                        &bt BT_CLR    &trans        &kp SPACE       &kp PIPE          &kp N0        &kp RALT
             >;
         };
 
