@@ -61,9 +61,9 @@
 
             label = "Nums";
             bindings = <
-&kp TAB     &kp N1      &kp N2      &kp N3            &kp N4          &kp N5          &kp MINUS  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET  &kp BSPC
-&bt BT_CLR  &kp ESCAPE  &kp LCTRL   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp LEFT_ALT    &kp Z      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL          &trans
-&kp LSHFT   &kp ESCAPE  &kp ESCAPE  &kp ESCAPE        &kp ESCAPE      &kp ESCAPE      &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &trans
+&kp TAB     &kp N1      &kp N2      &kp N3            &kp N4          &kp N5          &kp MINUS  &kp N7        &kp N8        &kp N9        &kp EQUAL      &kp BSPC
+&bt BT_CLR  &kp ESCAPE  &kp LCTRL   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp LEFT_ALT    &kp Z      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL      &trans
+&kp LSHFT   &kp ESCAPE  &kp ESCAPE  &kp ESCAPE        &kp ESCAPE      &kp ESCAPE      &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &trans
                                     &kp ESCAPE        &trans          &kp SPACE       &kp PIPE   &kp N0        &kp RALT
             >;
         };
@@ -106,13 +106,15 @@
             label = "Nav";
         };
 
-        layer_5 {
+        sym_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS             &kp AMPERSAND  &kp ASTRK          &kp BACKSLASH  &kp EQUAL              &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp UNDER             &kp DOLLAR     &kp PERCENT        &kp CARET      &kp PLUS               &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_PARENTHESIS  &kp EXCL       &kp AT_SIGN        &kp HASH       &kp RIGHT_PARENTHESIS  &trans
+                        &trans  &trans  &trans    &kp SINGLE_QUOTE      &kp LBRC       &kp DOUBLE_QUOTES
             >;
+
+            label = "Sym";
         };
 
         mouse_layer {
