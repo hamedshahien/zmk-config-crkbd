@@ -18,7 +18,9 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <31 6 18 30 41 40 39 19 7 8 20 32 33 34 22 21 9 10>;
-            flavor = "tap-preferred";
+            flavor = "tap-unless-interrupted";
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
         };
 
         hmr: homewrow_mods_right {
@@ -29,7 +31,9 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <38 37 36 29 28 27 26 25 13 14 16 15 17 5 4 3 2 1>;
-            flavor = "tap-preferred";
+            flavor = "tap-unless-interrupted";
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
         };
     };
 
@@ -108,10 +112,10 @@
 
         nav_layer {
             bindings = <
-&trans  &trans          &trans          &kp CAPS      &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans        &trans     &trans    &trans  &trans  &trans
+&trans  &trans          &trans            &kp CAPS           &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW       &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans             &trans     &trans    &trans  &trans  &trans
             >;
 
             label = "Nav";
@@ -119,10 +123,10 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans           &trans    &trans             &trans            &trans    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
-&trans  &kp KP_NUMBER_7  &trans    &trans             &trans            &trans    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
-&trans  &kp GRAVE        &kp APOS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
-                                   &trans             &trans            &trans    &trans  &trans           &trans
+&trans  &trans           &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
+&trans  &kp KP_NUMBER_7  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
+&trans  &trans           &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+                                 &trans  &trans  &trans    &trans  &trans           &trans
             >;
 
             label = "Mouse";
